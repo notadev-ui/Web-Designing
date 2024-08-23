@@ -1,0 +1,121 @@
+h1{
+    font-style:normal;
+    color: rgb(247, 114, 5);
+    text-align:center;
+    font-size:x-large;
+    padding-bottom: 10cm;
+}
+body{
+    background-color: rgb(49, 61, 61);
+}
+div{
+    background-color: azure;
+}
+h4,h3{
+    text-align: center;
+
+}
+h3{
+    color: rgb(160, 157, 157);
+    font-weight: 100;
+}
+#box1{
+    background-color: rgb(7, 7, 61);
+    
+}
+h1,h4,pre,h3{
+    margin: 0%;
+}
+body {
+    margin: 0%;
+    padding:0%
+}
+
+/* Remove margin and padding from the .upper divs */
+.upper {
+    margin: 0;
+    padding: 0;
+}
+.upper p, .upper h1, .upper h4 {
+    margin: 0;
+    padding: 0;
+}
+.clgLogo{
+    text-align: center;
+}
+.menubar{
+    height: 43px;
+    width:auto;
+    background-color:rgb(247, 114, 5) ;
+    display: inline-block;
+    cursor: pointer;
+}
+.container{
+    background-color:rgb(247, 114, 5);
+    color:black;
+}
+ 
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fcfafa;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .bckdov {
+    background-image: url('https://ramanujancollege.ac.in/media/images/image-3.2e16d0ba.fill-250x250.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%; 
+    display: block;
+    background-color: rgba(0, 15, 58, 0.8);
+    background-blend-mode: multiply;
+
+  }
+  .bckdov h1 ,p{
+    color: rgb(252, 251, 251);
+    text-align:center;
+    position: static;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+    
+  
+#box4{
+    background-color: rgb(247, 114, 5);
+    color: aliceblue;
+}
+.cont h1{
+    color:#fcfafa;
+    text-align: start;
+    background-color: rgb(247, 114, 5);
+
+}
+.cont{
+    height: 30px;
+}
+para,p{
+    color: black;
+    text-align: start;
+    display: inline-block;
+}
