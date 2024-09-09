@@ -1,12 +1,12 @@
 h1{
     font-style:normal;
-    color: rgb(247, 114, 5);
+    color: rgb(240, 117, 16);
     text-align:center;
     font-size:x-large;
     padding-bottom: 10cm;
 }
 body{
-    background-color: rgb(49, 61, 61);
+    background-color: azure;
 }
 div{
     background-color: azure;
@@ -81,7 +81,7 @@ body {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 40vh;
     width: 100%; 
     display: block;
     background-color: rgba(0, 15, 58, 0.8);
@@ -114,8 +114,50 @@ body {
 .cont{
     height: 30px;
 }
-para,p{
+.para,p{
     color: black;
     text-align: start;
     display: inline-block;
+    
+}
+footer{
+    height: 50px;
+    text-align: center;
+    padding: auto;
+    background-color:rgb(233, 120, 27) ;
+    margin:auto;
+    border:50px;
+    
+}
+
+.offer h2{
+    color: black;
+    background-color: rgb(240, 117, 16);
+}
+/* Container for image and text in the same line */
+.info-container,.map-container {
+    display: flex; /* Use Flexbox to align items horizontally */
+    align-items: flex-start; /* Align items to the start (top) */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Adds padding around the container */
+}
+
+.info-container img {
+    max-width: 1000px; /* Adjust the image size */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+
+.offer{
+    padding: 0;
+    margin: 0;
+    border: none;
+   
+
+}
+
+footer p {
+    margin: 0;
+    color: rgb(15, 15, 15);
 }
