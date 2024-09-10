@@ -136,16 +136,16 @@ footer{
 }
 /* Container for image and text in the same line */
 .info-container,.map-container {
-    display: flex; /* Use Flexbox to align items horizontally */
-    align-items: flex-start; /* Align items to the start (top) */
-    gap: 20px; /* Space between items */
-    padding: 20px; /* Adds padding around the container */
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .info-container img {
-    max-width: 1000px; /* Adjust the image size */
-    height: auto; /* Maintain aspect ratio */
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    max-width: 1000px;
+    height: auto;
+    flex-shrink: 0; 
 }
 
 

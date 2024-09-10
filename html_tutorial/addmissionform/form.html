@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>College Admission Form</h1>
+        <form action="#" method="post">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                 
+                <label for="fathername">Father Name:</label>
+                <input type="text" id="fathername" name="Father name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <!-- Course Details -->
+            <fieldset>
+                <legend>Course Details</legend>
+
+                <label for="course">Choose a Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="bca">BCA</option>
+                    <option value="bsc-cs">B.Sc. Computer Science</option>
+                    <option value="bba">BBA</option>
+                    <option value="ba">BA</option>
+                    <option value="bcom">B.Com</option>
+                </select>
+
+                <label>Preferred Mode of Study:</label>
+                <input type="radio" id="fulltime" name="mode" value="fulltime" required>
+                <label for="fulltime">Full-Time</label>
+                <input type="radio" id="parttime" name="mode" value="parttime">
+                <label for="parttime">Part-Time</label>
+            </fieldset>
+
+            <!-- Additional Information -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label>Skills:</label>
+            </br>
+                <input type="checkbox" id="programming" name="skills" value="programming">
+                <label for="programming">Programming</label>
+                <input type="checkbox" id="design" name="skills" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="dataanalysis" name="skills" value="dataanalysis">
+                <label for="dataanalysis">Data Analysis</label>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="form-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
