@@ -151,18 +151,19 @@ body {
 footer{
     height: 50px;
     text-align: center;
-    padding: auto;
-    background-color:rgb(233, 120, 27) ;
-    margin:auto;
-    border:50px;
+    background-color:rgb(8, 9, 54) ;
+    color:rgb(8, 9, 54) ;
+    border-top: 5px solid #ff6600;
+
     
 }
+
 
 .offer h2{
     color: black;
     background-color: rgb(240, 117, 16);
 }
-/* Container for image and text in the same line */
+
 .info-container,.map-container {
     display: flex; 
     align-items: flex-start; 
@@ -184,8 +185,15 @@ footer{
    
 
 }
+.text-content2{
+  background-color: rgb(22, 15, 61);
+  
+}
+.text-content2 h2{
+  color: white;
 
+}
 footer p {
     margin: 0;
-    color: rgb(15, 15, 15);
+    color: rgb(255, 252, 252);
 }
