@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color: #37132d; 
+    --primary-color: #fab751;
+    --main-font: "Playfair Display", serif;
+    --primary-font: "Roboto", sans-serif ;
+}
+
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+
+    background-color: #632653; 
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-family: var(--primary-font);
+    font-size: larger;
+    font-weight:bold;
+}
+ul li a:hover{
+    transition: all;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* nav end */
+
+/* section one  */
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.header-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 40%;
+}
+.header-heading{
+    font-size: 4rem;
+    font-family: var(--main-font);
+}
+.header-sub-heading{
+    width: 80%;
+    font-family: var(--primary-font);
+    margin: 20px 0;
+    color: rgb(82, 82, 82);
+
+}
+.header-img-container{
+    height: 50vh;
+    width: 30%;
+    position: relative;
+}
+.img-one{
+    position: absolute;
+    left: 10rem;
+
+    /* positioning up in center */
+    bottom: 5rem;
+}
+.img-two{
+    position: absolute;
+    left: 3rem;
+    top: 8rem;
+    
+    
+    /* positioning up in center */
+    bottom: 5rem;
+}
+.header-img{
+    width: 200px;
+    height: 300px;
+}
+img{
+    box-shadow: 5px 5px 5px var(--main-color);
+}
+.main-btn{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+
+}
+.main-btn:hover{
+    transition: .2s;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* experience */
+.experience{
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    
+    width: 70%;
+}
+.experience-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    padding-left: 10rem;
+    width: 70%;
+}
+.experience-img{
+    /* background: url("images/eugene-chystiakov-taZSJ6xmt48-unsplash.jpg"); */
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+}
+.gray-heading{
+    font: var(--main-font);
+    color: gray;
+    font-size: 2rem;
+}
+.experience-content .btn-container .main-btn{
+    margin-top: 20px;
+}
+
+/* SOCIAL MEDIA */
+.social-media{
+    margin: 5rem;
+    background-color: #37132d;
+    background-color: rgba(0, 0, 0, 0.344);
+}
+.sm-container{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.follow{
+    background-color: var(--main-color);
+    color: white;
+    margin: 2rem;
+    padding: 10px 20px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+/* hero */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hero-img{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: top;
+}
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    max-width: 400px;
+    margin-left: 10rem;
+}
+
+/* services */
+.services{
+    margin-top: 10rem;
+}
+.services .service-g-heading,.service-header-heading{
+    margin-left: 5rem;
+    
+}
+.services .header-heading{
+    margin-bottom: 30px;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+
+    position: relative;
+    
+    box-shadow: 1px 1px 1px gray ;
+}
+.card-img img{
+
+    width: 100%;
+    height: 200px;
+    position: absolute;
+
+    background-size: cover;
+    background-position: top;
+
+    top: 0;
+    left: 0;
+
+    box-shadow: 2px 2px 2px var(--main-color);
+
+}
+.card-content{
+    transform: translateY(220px);
+    text-align: center;
+    /* max-width: 200px; */
+}
+.card-title{
+    margin-bottom: 5px;
+    font-family: var(--primary-font);
+    font-weight: normal;
+    columns: var(--main-color);
+}
+.card-info{
+    margin:20px 40px;
+    color: gray;
+    text-align: center;
+}
+
+#appointmentForm{
+    margin-top: 0%;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* footer */
+footer{
+    margin-top: 10rem;
+    height: 200px;
+    background-color: var(--main-color);
+    color: white;
+
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.footer-card-title{
+    margin-bottom: 10px;
+
+    border-bottom: 2px solid white;
+
+}
+.footer-card-info{
+    font-family: var(--primary-font);
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+/* media */
+
+@media screen and (max-width:720px) {
+    nav{
+        justify-content: space-between;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .header-content{
+        
+        text-align: center;
+        align-items: center;
+        width: 70%;
+    }
+    .header-img-container{
+        display: none ;
+    }
+
+    .experience{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .experience-content{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+        /* margin-bottom: 5rem; */
+    }
+    .experience-subheading{
+        width: 100%;
+    }
+    .social-media{
+        padding-top: 5rem;
+    }
+
+
+    .hero{
+        width: 100%;
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+    .hero-container{
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-subheadings{
+        width: 100%;
+    }
+    
+}

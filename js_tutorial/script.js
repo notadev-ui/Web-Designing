@@ -61,7 +61,7 @@ console.log(`avg marks is : ${avg}`);
 //let items = [ 300, 600,500, 900 ,50];
 for(i=0; i< items.length; i++) {
     console.log(`before discount: ${items[i]}`);
-    let offer = items[i]/10;
+    let offSDer = items[i]/10;
     items[i] -= offer;
     console.log(`after discount ${items[i]}`);
 }
@@ -70,12 +70,58 @@ let company = ["Amazon", "Google","Meta", "Netflix","Microsoft","Samsung"];
 console.log(company);
 console.log(company.shift());
 console.log(company);
-console.log(company.splice(1,1,"Facebook"));
+console.logrt(company.splice(1,1,"Facebook"));
 console.log(company);
 company.push("Amazon");
 console.log(company);
+
+
+let str =prompt("enter the string in one case");
+console.log(str);
+if (str === str.toLowerCase()){
+    console.log("changing the case of string....");
+    console.log(str.toUpperCase());
+
+} else{
+    console.log("changing the case of string....");
+    console.log(str.toLowerCase());
+}
+// Function to change the case of each character in a string
+
+function toggleCase(str) {
+    let toggledStr = '';
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char === char.toUpperCase()) {
+            toggledStr += char.toLowerCase();
+        } else {
+            toggledStr += char.toUpperCase();
+        }
+    }
+    return toggledStr;
+}
+
+// Example usage:
+let stringToToggle = prompt("Enter the string");
+console.log("Original String:", stringToToggle);
+console.log("After toggling case:", toggleCase(stringToToggle))
+
+function removeCharacter(str, postion){
+       return str.slice(0, postion) + str.slice(postion+1);
+}
+let originalString = "HelloWorld";
+let position = 5;
+console.log("Original String:", originalString);
+console.log("After removing character at position", position + ":", removeCharacter(originalString, position));
 */
 
-function sum(x,y){
-    console.log(x+y);
+//. Write a JavaScript program to compute the sum of elements of a given array of integers.
+function sumArray(array){
+    let sum = 0;
+    for(i = 0; i < array.length; i++){
+        console.log(array[i]);
+        sum += array[i];
+    }  return sum;
 };
+
+ console.log(sumArray([1,2,4]));
