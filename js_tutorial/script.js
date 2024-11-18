@@ -113,7 +113,7 @@ let originalString = "HelloWorld";
 let position = 5;
 console.log("Original String:", originalString);
 console.log("After removing character at position", position + ":", removeCharacter(originalString, position));
-*/
+
 
 //. Write a JavaScript program to compute the sum of elements of a given array of integers.
 function sumArray(array){
@@ -125,3 +125,42 @@ function sumArray(array){
 };
 
  console.log(sumArray([1,2,4]));
+ 
+
+*/
+
+function birthdayCountdown(birthdayDate) {
+    const now = new Date();
+    let nextBirthday = new Date(now.getFullYear(), birthdayDate.getMonth(), birthdayDate.getDate());
+
+    // Adjust for the next year if the birthday has already passed this year
+    if (now > nextBirthday) {
+        nextBirthday.setFullYear(now.getFullYear() + 1);
+    }
+
+    const timeDiff = nextBirthday - now;
+
+    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+    return `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+}
+
+// Get birthday from user
+const userInput = prompt("Enter your birthdate (YYYY-MM-DD):");
+
+if (userInput) {
+    const birthdayDate = new Date(userInput);
+
+    if (!isNaN(birthdayDate)) {
+        setInterval(() => {
+            console.log(birthdayCountdown(birthdayDate));
+        }, 1000);
+    } else {
+        console.error("Invalid date format. Please use YYYY-MM-DD.");
+    }
+} else {
+    console.error("No date entered.");
+}
