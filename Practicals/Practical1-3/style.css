@@ -1,0 +1,215 @@
+h1{
+    font-style:normal;
+    color: rgb(240, 117, 16);
+    text-align:center;
+    font-size:x-large;
+    padding-bottom: 10cm;
+}
+body{
+    background-color: azure;
+}
+div{
+    background-color: azure;
+}
+h4,h3{
+    text-align: center;
+
+}
+h3{
+    color: rgb(160, 157, 157);
+    font-weight: 100;
+}
+#box1{
+    background-color: rgb(7, 7, 61);
+    
+}
+h1,h4,pre,h3{
+    margin: 0%;
+}
+
+.upper {
+    margin: 0;
+    padding: 0;
+}
+.upper p, .upper h1, .upper h4 {
+    margin: 0;
+    padding: 0;
+}
+.clgLogo{
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    background-color: #1f1e1e;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .navbar a, .navbar button {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar a:hover, .navbar button:hover {
+    background-color: #1f1e1e;
+    color: rgb(253, 250, 250);
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: #1f1e1e;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #1f1e1e;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #1f1e1e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.container{
+    background-color:rgb(247, 114, 5);
+    color:#1f1e1e;
+}
+ 
+
+ .bckdov {
+    background-image: url('https://ramanujancollege.ac.in/media/images/image-3.2e16d0ba.fill-250x250.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%; 
+    display: block;
+    background-color: rgba(0, 15, 58, 0.8);
+    background-blend-mode: multiply;
+
+  }
+  .bckdov h1 ,p{
+    color: rgb(252, 251, 251);
+    text-align:center;
+    position: static;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+    
+  
+#box4{
+    background-color: rgb(247, 114, 5);
+    color: aliceblue;
+}
+.cont h1{
+    color:#fcfafa;
+    text-align: start;
+    background-color: rgb(247, 114, 5);
+
+}
+.cont{
+    height: 30px;
+}
+.para,p{
+    color: black;
+    text-align: start;
+    display: inline-block;
+    
+}
+footer{
+    height: 50px;
+    text-align: center;
+    background-color:rgb(8, 9, 54) ;
+    color:rgb(8, 9, 54) ;
+    border-top: 5px solid #ff6600;
+
+    
+}
+
+
+.offer h2{
+    color: black;
+    background-color: rgb(240, 117, 16);
+}
+
+.info-container,.map-container {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.info-container img {
+    max-width: 1000px;
+    height: auto;
+    flex-shrink: 0; 
+}
+.info-container {
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+/* Media query for smaller screens (tablets/phones) */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .info-container img {
+    width: 100%; /* Takes full width of the container */
+  }
+}
+
+
+.offer{
+    padding: 0;
+    margin: 0;
+    border: none;
+   
+
+}
+.text-content2{
+  background-color: rgb(22, 15, 61);
+  
+}
+.text-content2 h2{
+  color: white;
+
+}
+footer p {
+    margin: 0;
+    color: rgb(255, 252, 252);
+}

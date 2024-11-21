@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+</body>
+<div>    
+</div>
+<script >
+ 
+ //(8) Remove a character at the specified position of a given string and return the new string.
+
+ function removeCharacter(str, postion){
+       return str.slice(0, postion) + str.slice(postion+1);
+}
+let originalString = "HelloWorld";
+let position = 5;
+document.write("originalString : ", originalString, "<br>");
+document.write("After removing character at position ", position + " : ", removeCharacter(originalString, position) ,"<br>");
+
+
+
+
+//(b) Change the case of a string. (L.e. upper case to lower case and vice-versa)
+
+
+function changeCase(str) {
+    let changedStr = '';
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char === char.toUpperCase()) {
+            changedStr += char.toLowerCase();
+        } else {
+            changedStr += char.toUpperCase();
+        }
+    }
+    return changedStr;
+}
+
+// Example usage:
+let stringToChangeCase = prompt("(8b) Enter the string to change case");
+document.write("<br> Original String : ", stringToChangeCase);
+document.write("<br>After changing the case : ", changeCase(stringToChangeCase))
+
+
+
+ 
+
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="return handleInput(event)">
+            <label for="birthday">Enter your birthdate:</label>
+            <input id="birthday" type="date" placeholder="YYYY-MM-DD">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <p id="countdown"></p> 
+    <script>
+        function birthdayCountdown(birthdayDate) {
+            const now = new Date();
+            let nextBirthday = new Date(now.getFullYear(), birthdayDate.getMonth(), birthdayDate.getDate());
+
+            if (now > nextBirthday) {
+                nextBirthday.setFullYear(now.getFullYear() + 1);
+            }
+
+            const timeDiff = nextBirthday - now;
+            const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); // Calculate days
+
+            // Update the countdown in the webpage
+            document.getElementById('countdown').innerText = `Birthday Countdown: ${days} day(s) left.`;
+        }
+
+        function handleInput(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get user input
+            const userInput = document.getElementById('birthday').value;
+
+            if (userInput) {
+                const birthdayDate = new Date(userInput);
+                if (!isNaN(birthdayDate)) {
+                    // Calculate and display the countdown
+                    birthdayCountdown(birthdayDate);
+                } else {
+                    document.getElementById('countdown').innerText = "Invalid date format. Please use YYYY-MM-DD.";
+                }
+            } else {
+                document.getElementById('countdown').innerText = "No date entered.";
+            }
+        }
+    </script>
+</body>
+</html>

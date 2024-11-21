@@ -14,12 +14,18 @@
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="name" placeholder="Enter your Full Name" required oninput="nameSplitter()">
         </div>
-
+    </br>
         <div class="form-group">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="name" placeholder="Auto Fill" readonly>
         </div>
+    </br>
+        <div class="form-group">
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="name" placeholder="Auto Fill" readonly>
+        </div>
 
+    </br>
         <div class="form-group">
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="name" placeholder="Auto Fill" readonly>
@@ -27,5 +33,22 @@
     </div>
 
 </body>
-<script src="script.js"></script>
+
+<script >
+    function nameSplitter(){
+    var fullName = document.getElementById('fullName').value.trim();
+    var nameParts = fullName.split(/\s+/); // Split by spaces
+    console.log(nameParts);
+   
+    var firstName = nameParts[0] || "NA";
+    var middleName = nameParts.length > 2 ? nameParts[nameParts.length -2] : "NA"
+    var lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : "NA"; // Last name is the last word
+
+
+  // Display the names in the labels
+  document.getElementById('firstName').value =   firstName;
+  document.getElementById('middleName').value =   middleName;
+  document.getElementById('lastName').value =   lastName;
+}
+</script>
 </html>
