@@ -19,9 +19,25 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
 
-    background-color: #632653; 
+    background-color: #6A1E55; 
+}
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.logo img{
+    box-shadow: 0px var(--main-color);
+    border-radius: 50%;
+}
+.logo h1{
+    font-size: 2rem;
+    font-family: var(--main-font);
 }
 
 ul li{
@@ -31,7 +47,7 @@ ul li{
 ul li a{
     text-decoration: none;
     margin: 10px;
-    color: black;
+    color: rgb(250, 247, 247);
     font-family: var(--primary-font);
     font-size: larger;
     font-weight:bold;
@@ -48,7 +64,7 @@ ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
 }
 .header-content{
     display: flex;
@@ -146,8 +162,9 @@ img{
 /* SOCIAL MEDIA */
 .social-media{
     margin: 5rem;
-    background-color: #37132d;
-    background-color: rgba(0, 0, 0, 0.344);
+    box-shadow: 0px 2px 2px  2px var(--main-color);
+    background-color: #4d1d3f;
+    
 }
 .sm-container{
     display: flex;
@@ -155,6 +172,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .follow{
     background-color: var(--main-color);
@@ -163,6 +181,7 @@ img{
     padding: 10px 20px;
     font-family: var(--primary-font);
     font-weight: bold;
+    border-radius: 10%;
 }
 
 /* hero */
