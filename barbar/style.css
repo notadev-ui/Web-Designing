@@ -19,7 +19,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 
     background-color: #6A1E55; 
 }
@@ -77,6 +77,7 @@ ul li a:hover{
 .header-heading{
     font-size: 4rem;
     font-family: var(--main-font);
+
 }
 .header-sub-heading{
     width: 80%;
@@ -232,7 +233,7 @@ img{
 
     position: relative;
     
-    box-shadow: 1px 1px 1px gray ;
+    box-shadow: 1px 1px 2px  gray ;
 }
 .card-img img{
 
@@ -266,24 +267,41 @@ img{
     text-align: center;
 }
 
-#appointmentForm{
-    margin-top: 0%;
+.forms {
+    border-radius: 5px;
+    border: 1px solid #4d1d3f;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #e6e2e5;
+    padding: 20px; 
+    box-shadow: 2px 2px 2px var(--main-color);
 }
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the fields wrap on smaller screens */
+    gap: 20px; /* Creates consistent space between columns */
+    justify-content: space-between;
+}
+
 .form-group {
-    margin-bottom: 1rem;
+    flex: 1 1 48%; /* Ensures equal width for labels and inputs */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem; /* Space between rows */
 }
 
 label {
-    display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 input, select, button {
-    width: 100%;
+    width: 100%; /* Makes input fields and buttons take up the full width of their container */
     padding: 0.75rem;
-    margin: 0;
-    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    border: 1px solid #4d1d3f;
     border-radius: 4px;
 }
 
@@ -330,7 +348,7 @@ footer{
 
 /* media */
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
     nav{
         justify-content: space-between;
     }
@@ -385,5 +403,14 @@ footer{
     .hero-subheadings{
         width: 100%;
     }
+
+    .form-row {
+        flex-direction: column; /* Stacks the fields vertically on small screens */
+    }
+
+    .form-group {
+        flex: 1 1 100%; /* Each field takes up 100% width on small screens */
+    }
+
     
 }
